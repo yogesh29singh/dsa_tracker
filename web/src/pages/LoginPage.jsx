@@ -200,7 +200,7 @@ function Login() {
                     <label>Full Name</label>
                     <input
                       type="text"
-                      placeholder="John Doe"
+                      placeholder="Yogesh singh"
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       required
@@ -211,7 +211,7 @@ function Login() {
                     <label>Username</label>
                     <input
                       type="text"
-                      placeholder="johndoe123"
+                      placeholder="Yogeshsingh123"
                       value={username}
                       onChange={(e) => setUsername(e.target.value)}
                       required
@@ -223,7 +223,7 @@ function Login() {
                   <label>Email</label>
                   <input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="Yogesh@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
