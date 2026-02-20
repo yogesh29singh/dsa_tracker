@@ -1,0 +1,104 @@
+.add-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.add-modal {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+
+.add-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.add-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-body {
+  padding: 20px;
+}
+
+.add-group {
+  margin-bottom: 14px;
+}
+
+.add-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.add-group input,
+.add-group select {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.add-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+
+.add-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.add-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.add-cancel {
+  background: #f4f4f5;
+  border: 1px solid var(--border);
+}
+
+
+@media (max-width: 640px) {
+  .add-modal {
+    margin: 14px;
+  }
+
+  .add-grid {
+    grid-template-columns: 1fr;
+  }
+}

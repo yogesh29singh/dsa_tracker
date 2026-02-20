@@ -1,0 +1,396 @@
+.student-layout {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.student-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: #2aa198;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-area h1 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.logo-area p {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.greeting {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.greeting strong {
+  color: #111827;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #ef44441a;
+  color: #ef4444;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #ef444433;
+}
+
+.student-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon.primary { background: #eef2ff; color: #2aa198; }
+.stat-icon.success { background: #f0fdf4; color: #16a34a; }
+.stat-icon.accent  { background: #fef3c7; color: #d97706; }
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-value small {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.stat-value.accent {
+  color: #d97706;
+}
+
+.overall-progress-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progress-bar-outer {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: #2aa198;
+  transition: width 0.5s ease;
+}
+
+.progress-message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.topics-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topic-accordion {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.topic-summary {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  background: #f9fafb;
+}
+
+.topic-summary::-webkit-details-marker {
+  display: none;
+}
+
+.topic-info {
+  flex: 1;
+}
+
+.topic-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+.topic-desc {
+  font-size: 0.85rem;
+  color: #6b7280;
+  display: block;
+  margin-top: 4px;
+}
+
+.topic-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mini-progress {
+  width: 80px;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mini-progress-fill {
+  height: 100%;
+  background: #2aa198;
+  transition: width 0.4s ease;
+}
+
+.topic-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4b5563;
+  min-width: 50px;
+  text-align: right;
+}
+
+.topic-content {
+  padding: 0 20px 16px;
+}
+
+.problem-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+  gap: 12px;
+}
+
+.problem-row:last-child {
+  border-bottom: none;
+}
+
+
+.problem-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+  accent-color: #2aa198;
+}
+
+.problem-title {
+  font-size: 0.98rem;
+  color: #111827;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.problem-difficulty .badge {
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.badge.easy    { background: #dcfce7; color: #166534; }
+.badge.medium  { background: #fef3c7; color: #92400e; }
+.badge.hard    { background: #fee2e2; color: #991b1b; }
+
+.problem-links {
+  display: flex;
+  gap: 12px;
+}
+
+.problem-links a {
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.problem-links a:hover {
+  color: #2aa198;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .topic-meta {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .mini-progress {
+    width: 100px;
+  }
+}
+
+.topic-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.topic-summary::-webkit-details-marker {
+  display: none;
+}
+
+.topic-summary svg {
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+details[open] .topic-summary svg {
+  transform: rotate(180deg);
+}
+
+.topic-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.topic-title {
+  font-weight: 600;
+}
+
+.topic-desc {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+
+.topic-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

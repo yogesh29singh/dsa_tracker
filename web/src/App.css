@@ -1,0 +1,15 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow-card {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
