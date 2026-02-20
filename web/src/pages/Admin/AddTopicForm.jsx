@@ -34,7 +34,7 @@ export default function AddTopicForm({ onAddTopic }) {
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          placeholder="Brief description (optional)"
+          placeholder="Brief description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
